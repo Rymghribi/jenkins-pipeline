@@ -23,7 +23,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: raedsebti/myweb:<TAG>
+      - image: rymaa/myweb:<TAG>
         imagePullPolicy: Always
         name: myweb
 
