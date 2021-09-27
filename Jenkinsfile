@@ -25,7 +25,11 @@ pipeline {
         }
       }
     }
-
+    
+    stage('Remove Unused docker image') {
+      sh "docker rmi rymaa/myweb:$BUILD_NUMBER"
+    }
+  
     stage('Deploy App to Kubernetes') {     
       steps {
         container('kubectl') {
