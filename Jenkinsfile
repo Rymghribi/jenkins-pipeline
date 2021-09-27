@@ -12,7 +12,7 @@ pipeline {
 
   stages {
 
-    stage('Kaniko Build & Push Image') {
+    stage('Build & Push Image') {
       steps {
         container('kaniko') {
           script {
